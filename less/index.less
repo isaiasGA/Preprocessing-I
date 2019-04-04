@@ -71,12 +71,14 @@ html {
   h1 {
 	  font-family: @montserrat;
 	  font-size: 3rem;
-
-  }
+		padding-left: 107px;
+}
+  
 
 h2 {
 	font-size: 2rem;
 	font-family: @montserrat;
+	padding-bottom:12px;
 }
 
 p {
@@ -92,19 +94,50 @@ p {
 
 .nav {
 	display: flex;
-    justify-content: space-between;
+  justify-content:flex-start;
 	margin: 35px 0;
 	
 	a {
 		text-decoration: none;
 		font-size: 1.5rem;
 		font-family: @pt-sans ;
-		color:@mineshaft ;
-		
-		
+		color:@mineshaft;
+		margin-right: 38px;
 	}
 }
 
 a:hover {
 	background-color: @jumbo; 
 }
+
+.ig img {
+	width: 100%;
+	height: auto;
+}
+
+.intro {
+	background: #BCBCBC;
+  margin-bottom: 31px;
+}
+
+.top-content {
+	display: flex;
+	margin-bottom: 31px;
+	border-top: solid black;
+	padding-top: 30px;
+
+	.myself {
+		background: #F4F4F4;
+		padding: 21px;
+		margin-right: 20px
+		}
+
+	.skills {
+		background: #F4F4F4;
+		padding: 21px;
+		margin-right: 20px
+		}
+}
+
+
+
