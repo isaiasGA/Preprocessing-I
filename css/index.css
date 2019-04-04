@@ -136,13 +136,16 @@ html {
 *:after {
   box-sizing: inherit;
 }
+body {
+  background-image: url("../images/background2.jpg");
+}
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  padding-left: 107px;
+  padding-top: 14px;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 12px;
 }
@@ -160,37 +163,100 @@ p {
   justify-content: flex-start;
   margin: 35px 0;
 }
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    margin: 35px 0;
+  }
+}
 .nav a {
   text-decoration: none;
   font-size: 1.5rem;
   font-family: "pt sans", sans-serif;
-  color: #252525;
+  color: white;
   margin-right: 38px;
+}
+@media (max-width: 500px) {
+  .nav a {
+    margin-right: 0;
+    padding: 23px 39%;
+    border-bottom: solid white;
+  }
+}
+.nav .home {
+  border-top: solid white;
 }
 a:hover {
   background-color: #7C7C84;
 }
-.ig img {
-  width: 100%;
+img {
+  width: 37%;
   height: auto;
+  padding-top: 41px;
+}
+@media (max-width: 500px) {
+  img {
+    width: 54%;
+    height: auto;
+    padding-top: 16px;
+  }
 }
 .intro {
   background: #BCBCBC;
   margin-bottom: 31px;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .intro {
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
 }
 .top-content {
   display: flex;
   margin-bottom: 31px;
-  border-top: solid black;
-  padding-top: 30px;
 }
-.top-content .myself {
+.myself {
   background: #F4F4F4;
   padding: 21px;
   margin-right: 20px;
 }
-.top-content .skills {
+.skills {
   background: #F4F4F4;
   padding: 21px;
   margin-right: 20px;
+}
+p {
+  padding: 9px 0;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 2rem;
+    padding-top: 14px;
+  }
+}
+.bttn-content {
+  background: #F4F4F4;
+  height: 140px;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bttn-content h2 {
+  padding: 15px 0;
+}
+.bttn-content ul {
+  padding-left: 77px;
+  padding-bottom: 13px;
+  list-style-type: square;
+}
+.bttn-content li {
+  font-size: 1.7rem;
+  padding-bottom: 18px;
 }
